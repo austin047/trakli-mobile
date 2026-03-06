@@ -1,4 +1,4 @@
-name: iOS Release
+name: iOS Release (Main + Manual)
 
 on:
   push:
@@ -24,6 +24,7 @@ env:
 
 jobs:
   build-and-release:
+    name: iOS Release Pipeline
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
