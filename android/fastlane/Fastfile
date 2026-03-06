@@ -32,7 +32,9 @@ platform :android do
       build_number: options[:build_number],
       version_number: options[:version_number],
       store: "playstore",
-      environment: options[:environment] || 'dev'
+      environment: options[:environment],
+      flavor: options[:flavor],
+      target: options[:target]
     )
   end
 
